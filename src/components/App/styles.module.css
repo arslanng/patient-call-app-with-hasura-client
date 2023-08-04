@@ -1,0 +1,12 @@
+.container{
+    
+    align-items: center;
+    
+    padding: 24px;
+}
+
+.content{
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 24px;
+    border: solid 4px bisque;
+}

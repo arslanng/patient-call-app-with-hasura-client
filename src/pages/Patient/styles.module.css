@@ -1,0 +1,41 @@
+.content {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 24px;
+}
+
+.header {
+  color: white;
+  text-align: center;
+}
+
+.list {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 10px;
+  height: 63vh;
+  margin-left: 12px;
+  text-align: center;
+  overflow: auto;
+}
+
+.call {
+  background-color: rgba(255, 255, 255, 0.5);
+
+  padding: 0 10px;
+  margin-bottom: 20px;
+  height: 30vh;
+  overflow: none;
+}
+
+.listItems {
+  padding-left: 25px;
+  font-size: large;
+  font-weight: 500;
+  text-align: start;
+  border-bottom: 1px solid black;
+}
+
+.callItem {
+  font-size: 40px;
+  text-align: center;
+  margin-top: -3px;
+}
