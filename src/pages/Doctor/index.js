@@ -9,7 +9,6 @@ import { useParams } from "react-router-dom";
 
 function Doctor() {
   const { company } = useParams();
-  console.log(company);
 
   const { data, loading } = useSubscription(ALL_PATIENTS_SUB, {
     variables: {

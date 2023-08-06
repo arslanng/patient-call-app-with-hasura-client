@@ -16,9 +16,7 @@ export const ALL_PATIENTS_SUB = gql`
 export const UPDATE_PATIENT = gql`
   mutation MyMutation($data: patients_set_input, $updatePatientId: Int!) {
     update_patients_by_pk(pk_columns: { id: $updatePatientId }, _set: $data) {
-      company
       id
-      status
     }
   }
 `;
@@ -26,9 +24,7 @@ export const UPDATE_PATIENT = gql`
 export const DELETE_PATIENT = gql`
   mutation MyMutation($deletePatientId: Int!) {
     delete_patients_by_pk(id: $deletePatientId) {
-      company
       id
-      registration_number
     }
   }
 `;
