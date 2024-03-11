@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useMutation } from "@apollo/client";
-import { Form, Input, Button, Select, message, Row, Col, Divider } from "antd";
+import { Form, Input, Button, Select, message, Row, Col } from "antd";
 import { ADD_PATIENT } from "./queries";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
@@ -32,7 +32,7 @@ function Nurse() {
 
   return (
     <Form
-    className={styles.form}
+      className={styles.form}
       name="basic"
       initialValues={{
         company: "Renault",
@@ -43,8 +43,8 @@ function Nurse() {
       autoComplete="off"
       ref={formRef}
     >
+      <h2>Hasta Ekleme</h2>
       <Row gutter={24}>
-        <Divider orientation="left">Hasta Ekleme</Divider>
         <Col xs={24} md={10}>
           <Form.Item
             // label="Username"
@@ -88,7 +88,7 @@ function Nurse() {
               loading={loading}
               disabled={loading}
             >
-              Submit
+              Ekle
             </Button>
           </Form.Item>
         </Col>
